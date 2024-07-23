@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header & Footer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .main-nav a:hover {
+            color: #ffb300 !important;
+        }
+        #search-input.show {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; box-sizing: border-box;">
+    <header class="fixed-top bg-white shadow-sm">
+        <div class="w-100 bg-dark">
+            <div class="container d-flex justify-content-between align-items-center py-2">
+                <div class="logo">
+                    <img src="Image/EasyBodyHealth-small-cropped.png" alt="EasyBodyHealth Logo" style="max-height: 50px;">
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link text-white font-weight-bold" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white font-weight-bold" href="/how-it-works">How it Works</a></li>
+                        <li class="nav-item"><a class="nav-link text-white font-weight-bold" href="/questions">Questions</a></li>
+                        <li class="nav-item"><a class="nav-link text-white font-weight-bold" href="/guidance">Guidance</a></li>
+                        <li class="nav-item"><a class="nav-link text-white font-weight-bold" href="/functions">Functions</a></li>
+                        <li class="nav-item"><a class="nav-link text-white font-weight-bold" href="/signs">Signs</a></li>
+                        <li class="nav-item"><a class="nav-link text-white font-weight-bold" href="/learn">Learn</a></li>
+                    </ul>
+                </nav>
+                <div class="search-toggle position-relative">
+                    <input type="text" id="search-input" class="form-control position-absolute d-none" style="top: -5px; right: 30px; width: 150px;" placeholder="Search...">
+                    <span class="search-icon" onclick="toggleSearch()" style="cursor: pointer; font-size: 20px;">&#128269;</span>
+                </div>
+            </div>
+        </div>
+    </header>
+<main>
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div style="flex: 0 0 30%; max-width: 50%;">
+                <img style="width: 320px;" src="https://cdn.pixabay.com/photo/2017/08/02/00/49/people-2569234_960_720.jpg" class="images" alt="picture">
+            </div>
+            <div style="padding-top: 80px;" class="col-md-6 mt-4 mt-md-0">
+                <h5 style="font-weight: bold; color: rgb(0, 128, 128);">JUNE 18, 2024</h5>
+                <h1 style="width: 566px;">U.S. Surgeon General Wants a Warning Label for Social Media, How it Could Work</h1>
+                <p>In an op-ed in The New York Times, Surgeon General Dr. Vivek Murthy called on Congress to put a warning
+                    label on social media platforms, warning of...</p>
+                <a style="font-weight: bold; color: rgb(0, 128, 128); text-decoration: none;" href="#">READ MORE <span>&rarr;</span></a>
+            </div>
+        </div>
+    </div>
+</main>
+<footer style="background-color: #333;">
+    <div class="container py-1 py-lg-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last item social" style="padding-bottom: 0px;">
+                <div class="fw-bold d-flex align-items-center mb-2"></div>
+            </div>
+            <div class="col-lg-6"><img src="Image/EasyBodyHealth-small-cropped.png" width="81" height="64" />
+                <p><span style="color: rgb(97, 110, 128);">EasyBodyHealth empowers people to take control of their well-being by weaving </span><strong><span style="color: rgb(97, 110, 128);">science-backed health information</span></strong><span style="color: rgb(97, 110, 128);"> into </span><strong><span style="color: rgb(97, 110, 128);">engaging, culturally relevant content.</span></strong></p>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2 text-center text-lg-start d-flex flex-column item">
+                <h4 class="fs-2 text-white">About Us</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-secondary text-decoration-none" href="#">Company</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2 text-center text-lg-start d-flex flex-column item">
+                <h4 class="fs-2 text-white">Contact Us</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-secondary" href="#"></a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Advertise with us</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Submit Content</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2 text-center text-lg-start d-flex flex-column item">
+                <h4 class="fs-2 text-white">Privacy Policy</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-secondary" href="#"></a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Refund Policy</a></li>
+                    <li><a class="link-secondary" href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <div class="d-flex justify-content-between align-items-center pt-3">
+            <p class="mb-0 text-white">© 2024 EasyBodyHealth. All rights reserved. </p>
+        </div>
+        <div class="d-flex justify-content-between align-items-center pt-3">
+            <p class="mb-0 text-white">Powered by <span>CompanyLogo</span></p>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleSearch() {
+            var searchInput = document.getElementById('search-input');
+            searchInput.classList.toggle('d-none');
+            if (!searchInput.classList.contains('d-none')) {
+                searchInput.focus();
+            }
+        }
+    </script>
+</body>
+</html>
