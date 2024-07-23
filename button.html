@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form button</title>
+    <style>
+        .content {
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .full {
+            max-width: 30%;
+            font-family: Arial, sans-serif;
+           
+        }
+
+        .paragraph {
+            font-weight: 600;
+        }
+
+        .username input {
+            padding: 10px;
+            border-radius: 5px;
+            width: -webkit-fill-available;
+        }
+
+        #location {
+            width: -webkit-fill-available;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .btn-prime-full {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-prime-full:hover {
+            background-color: #3700b3;
+        }
+
+        .links {
+
+            text-align: center;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="full">
+            <form>
+                <p class="paragraph">Your username will be public to the community so choose something as unique as you
+                </p>
+                <div class="username">
+                    <input type="text" id="username" name="username" placeholder="Create a username">
+                </div>
+                <div>
+                    <select id="location" name="location">
+                        <option value="">Where do you call home?</option>
+                        <option value="">Select...</option>
+                        <option value="">Select...</option>
+                    </select>
+                </div>
+                <div style="margin-top: 10px;">
+                    <input type="checkbox" id="age" name="age">
+                    <label for="age">Are you 18 or older?</label>
+                </div>
+                <button type="submit" class="btn-prime-full">Complete Sign up</button>
+            </form>
+            <div class="links">
+                <p>Already a member? <a href="#">Log in</a></p>
+                <a href="#">Privacy Policy and Terms of Use</a>
+            </div>
+        </div>
+        <div>
+            <img src="Image/thumbnail.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
